@@ -1,20 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BuonOmo</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <style media="screen">
-      a:hover {
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+      }
+      h1 {
+        width: 40vw;
+        text-align: center;
         font-weight: bold;
       }
+      li:hover {
+        animation: push 1s;
+        padding-left: 4px;
+      }
+      li + li {
+        padding-bottom: 4;
+      }
+      li {
+        width: 40vw;
+        animation: pull 0.5s;
+      }
+      @keyframes push {
+        0% {
+          padding-left: 0;
+        }
+        100% {
+          padding-left: 4px;
+        }
+      @keyframes pull {
+        0% {
+          padding-left: 4px;
+        }
+        100% {
+          padding-left: 0;
+        }
+      }
     </style>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-  <body>
-    <h1>My work</h1>
+  <body class="container-fluid">
+
+    <h1 class="page-header">My work</h1>
     <ul>
       <li><a href="asc/index.html">Ascacou</a></li>
       <li><a href="http://steadygo.herokuapp.com/">Steady GO - server up 8 hours a day</a></li>
       <li><a href="http://tti.insa-lyon.fr/kazoo/master.html">Kazoo</a> and <a href="http://tti.insa-lyon.fr/col/index.html"> creation collector</a></li>
     </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>
