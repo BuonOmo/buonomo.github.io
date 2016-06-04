@@ -15,6 +15,8 @@
         justify-content: center;
         align-items: center;
         font-size: 25px;
+        background-color: #f7f7f7;
+        min-height: 100vh;
       }
       h1 {
         width: 40vw;
@@ -31,6 +33,22 @@
       li {
         width: 40vw;
         animation: pull 0.5s;
+      }
+      footer {
+        border: 1px solid #eee;
+        background-color: #fff;
+        color: #777;
+        text-align: center;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        margin-top: 100px;
+      }
+      img {
+        margin: 4px;
+        height: 34px;
       }
       @keyframes push {
         0% {
@@ -53,14 +71,20 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="container-fluid">
-
-    <h1 class="page-header">My work</h1>
-    <ul>
-      <li><a href="asc/index.html">Ascacou</a></li>
-      <li><a href="http://steadygo.herokuapp.com/">Steady GO - server up 8 hours a day</a></li>
-      <li><a href="http://tti.insa-lyon.fr/kazoo/master.html">Kazoo</a> and <a href="http://tti.insa-lyon.fr/col/index.html"> creation collector</a></li>
-    </ul>
+  <body>
+    <div class="container-fluid">
+      <h1 class="page-header">My work</h1>
+      <ul>
+        <li><a href="asc/index.html">Ascacou</a></li>
+        <li><a href="http://steadygo.herokuapp.com/">Steady GO - server up 8 hours a day</a></li>
+        <li><a href="http://tti.insa-lyon.fr/kazoo/master.html">Kazoo</a> and <a href="http://tti.insa-lyon.fr/col/index.html"> creation collector</a></li>
+      </ul>
+    </div>
+    <footer>
+      <a href="https://github.com/BuonOmo/" target="_blank"><img src="/icons/github.svg"/></a>
+      <a href="https://www.codingame.com/profile/da020b28272eba12c9abb9a47428e6433866901" target="_blank"><img class="img-rounded" src="/icons/codingame.png"/></a>
+      <a href="https://fr.linkedin.com/in/ulysse-buonomo-69b64b106" target="_blank"><img src="/icons/linkedin.png"/></a>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
