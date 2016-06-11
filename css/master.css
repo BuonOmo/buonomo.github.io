@@ -5,7 +5,6 @@ body {
   align-items: center;
   font-size: 25px;
   background-color: #f7f7f7;
-  min-height: 100vh;
   text-align: center;
 }
 
@@ -17,6 +16,10 @@ h1,h2,p {
 }
 
 .container-fluid {
+  /*
+  Fix the footer at the bottom
+   */
+  min-height: calc(100vh - 180px);
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -44,8 +47,6 @@ footer {
   background-color: #fff;
   color: #777;
   text-align: center;
-  bottom: 0;
-  position: absolute;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 15px;
