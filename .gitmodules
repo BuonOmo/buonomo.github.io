@@ -1,3 +1,9 @@
 [submodule "asc"]
 	path = asc
 	url = https://github.com/BuonOmo/ascacou
+[submodule "kazoo"]
+	path = kazoo
+	url = https://github.com/Ealhad/kazoo/
+[submodule "createCollections"]
+	path = collectionform
+	url = https://github.com/BuonOmo/createCollections
