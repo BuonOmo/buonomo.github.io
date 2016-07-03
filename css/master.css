@@ -15,33 +15,40 @@ h1,h2,p {
   font-family: Raleway;
 }
 
+
+/*———————————————————————————————————————————————————————————————————————*\
+    $content
+\*———————————————————————————————————————————————————————————————————————*/
 .container-fluid {
-  /*
-  Fix the footer at the bottom
-   */
+  /* Fix the footer at the bottom */
   min-height: calc(100vh - 180px);
   padding-left: 10%;
   padding-right: 10%;
 }
-h2 + p {
+.container-fluid h2 + p {
   border: 1px solid #000;
   border-radius: 4px;
   padding: 4px;
 }
-h1 {
+.container-fluid h1 {
   font-weight: bold;
 }
-li:hover {
+.container-fluid li:hover {
   animation: push 1s;
   padding-left: 4px;
 }
-li + li {
+.container-fluid li + li {
   padding-bottom: 4;
 }
-li {
+.container-fluid li {
   width: 40vw;
   animation: pull 0.5s;
 }
+
+
+/*———————————————————————————————————————————————————————————————————————*\
+    $Footer
+\*———————————————————————————————————————————————————————————————————————*/
 footer {
   border: 1px solid #eee;
   background-color: #fff;
@@ -52,10 +59,16 @@ footer {
   padding-bottom: 15px;
   margin-top: 100px;
 }
-img {
+footer img {
   margin: 4px;
   height: 34px;
 }
+
+
+
+/*———————————————————————————————————————————————————————————————————————*\
+    $Animations
+\*———————————————————————————————————————————————————————————————————————*/
 @keyframes push {
   0% {
     padding-left: 0;
