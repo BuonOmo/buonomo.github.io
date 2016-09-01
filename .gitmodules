@@ -9,4 +9,4 @@
 	url = https://github.com/BuonOmo/createCollections
 [submodule "belloc"]
 	path = belloc
-	url = git@github.com:BuonOmo/belloc.git
+	url = https://github.com/BuonOmo/belloc.git
