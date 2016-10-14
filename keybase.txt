@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/ulysse
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://buonomo.github.io
+  * I am ulysse (https://keybase.io/ulysse) on keybase.
+  * I have a public key ASDbVJjf42fm6IxIB-ZXs73n7JTntl9GQXWlHCI9C7ybcQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120db5498dfe367e6e88c4807e657b3bde7ec94e7b65f464175a51c223d0bbc9b710a",
+            "host": "keybase.io",
+            "kid": "0120db5498dfe367e6e88c4807e657b3bde7ec94e7b65f464175a51c223d0bbc9b710a",
+            "uid": "d97e609b03de7506d4be3bee29f24319",
+            "username": "ulysse"
+        },
+        "service": {
+            "hostname": "buonomo.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.17"
+    },
+    "ctime": 1476407129,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1476406888,
+        "hash": "3fec9a19176fe7e6e6f047a62b5d197e2186c11f2f99d52de1aaff53dc247eb6453a9378607fc55824ad5e3471f47016a615f94017396c554e937c7a32cdc5ad",
+        "seqno": 675791
+    },
+    "prev": "4ac27ba59c2843dfab33a5a42d1cc262a2f622f837c51794252923c264cb4423",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg21SY3+Nn5uiMSAfmV7O95+yU57ZfRkF1pRwiPQu8m3EKp3BheWxvYWTFAvd7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZGI1NDk4ZGZlMzY3ZTZlODhjNDgwN2U2NTdiM2JkZTdlYzk0ZTdiNjVmNDY0MTc1YTUxYzIyM2QwYmJjOWI3MTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZGI1NDk4ZGZlMzY3ZTZlODhjNDgwN2U2NTdiM2JkZTdlYzk0ZTdiNjVmNDY0MTc1YTUxYzIyM2QwYmJjOWI3MTBhIiwidWlkIjoiZDk3ZTYwOWIwM2RlNzUwNmQ0YmUzYmVlMjlmMjQzMTkiLCJ1c2VybmFtZSI6InVseXNzZSJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiYnVvbm9tby5naXRodWIuaW8iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xNyJ9LCJjdGltZSI6MTQ3NjQwNzEyOSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDc2NDA2ODg4LCJoYXNoIjoiM2ZlYzlhMTkxNzZmZTdlNmU2ZjA0N2E2MmI1ZDE5N2UyMTg2YzExZjJmOTlkNTJkZTFhYWZmNTNkYzI0N2ViNjQ1M2E5Mzc4NjA3ZmM1NTgyNGFkNWUzNDcxZjQ3MDE2YTYxNWY5NDAxNzM5NmM1NTRlOTM3YzdhMzJjZGM1YWQiLCJzZXFubyI6Njc1NzkxfSwicHJldiI6IjRhYzI3YmE1OWMyODQzZGZhYjMzYTVhNDJkMWNjMjYyYTJmNjIyZjgzN2M1MTc5NDI1MjkyM2MyNjRjYjQ0MjMiLCJzZXFubyI6OCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEBnb8oMwCU8dltqzYrdyJ1oqAvP0KdWbYdGkk/LiCLxDZEO8NAZsKBe795W0GHDWIpphwr+sqXh0jiwaqjCiysFqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgo43rbl0wbRlMPBgjmbcB7OvUYW9ydC9VCfu6PZYy1syjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ulysse
+
+==================================================================
