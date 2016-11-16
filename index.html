@@ -26,8 +26,7 @@
     <!-- <meta name="twitter:description" content="You will see my CV and work!" /> -->
     <meta name="twitter:image" content="http://buonomo.github.io/img/profil.png" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/master.css">
     <link rel="canonical" href="http://buonomo.github.io">
 
@@ -40,46 +39,32 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
   </head>
   <body>
     <div class="background"></div>
     <div class="wrapper">
+      <div class="wip">Work in &lt;progress/&gt;</div>
       <noscript>
         Be carefull, javascript is down on your browser.
       </noscript>
-      <div class="container-fluid">
-        <h1 class="page-header">My work</h1>
-        <div>
-          <h2><a href="asc/">Ascacou</a></h2>
-          <p>
-            Ascacou is a two player game, created by my uncle Marc Buonomo.
-            I’ve made an online and an electron version of this game, which you can find on <a href="https://github.com/BuonOmo/ascacou">github</a>.
-            Soon it will be an online game, using Ruby on Rails or Nodejs.
-          </p>
-        </div>
-        <div>
-          <h2><a href="http://steadygo.herokuapp.com/">Steady GO</a></h2>
-          <p>
-            This project is a improvement project : we’ve worker on new technologies such as AngularJS and NodeJS for the first time.
-            Connect with facebook and enjoy.
-          </p>
-        </div>
-        <div>
-          <h2><a href="/kazoo">Kazoo</a></h2>
-          <p>
-            I’ve worked on Kazoo, the most usefull tool in improvisation. Working with cross-over requests !
-            To create collections for Kazoo, this <a href="/collectionform">simple form</a> will help.
-          </p>
-        </div>
+      <div id="app">
+        <h1>My work</h1>
+        <article-resume v-for="article in articles" :article="article"/>
       </div>
-      <footer class="invert-blend">
-        <a href="https://github.com/BuonOmo/" target="_blank"><img alt="github" src="icons/github.svg"/></a>
-        <a href="https://www.codingame.com/profile/da020b28272eba12c9abb9a47428e6433866901" target="_blank"><img alt="codingame" class="img-rounded" src="icons/codingame.png"/></a>
-        <a href="https://fr.linkedin.com/in/ulysse-buonomo-69b64b106" target="_blank"><img alt="linkedin" src="icons/linkedin.png"/></a>
+      <footer>
+        <a href="https://github.com/BuonOmo/" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.codingame.com/profile/da020b28272eba12c9abb9a47428e6433866901" target="_blank">
+          <img alt="codingame" class="img-rounded" src="icons/codingame.png"/>
+        </a>
+        <a href="https://fr.linkedin.com/in/ulysse-buonomo-69b64b106" target="_blank">
+          <i class="fa fa-linkedin"></i>
+        </a>
       </footer>
-  </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </div>
+    <script src="lib/main.js" charset="utf-8"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

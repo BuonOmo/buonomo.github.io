@@ -1,3 +1,11 @@
 # Original size for icons
 user-icon-big.png
 cat_wink.jpg
+
+# Sass compiler
+.sass-cache
+*.css.map
+
+
+# We do not ignore css and js file so that github render the website without
+# issues

@@ -4,7 +4,8 @@ body {
   /*background-color: #f7f7f7;*/
   text-align: center;
   background-color: black;
-  color: white; }
+  color: white;
+}
 
 .background {
   background: url(http://unsplash.com/photos/UJQVUWsJFBo/download);
@@ -13,26 +14,32 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #FF4B4E; }
-
+  background-color: #FF4B4E;
+}
 .wrapper {
   mix-blend-mode: screen;
   color: black;
-  background-color: white; }
+  background-color: white;
+}
 
 .invert-blend {
   color: white;
-  background-color: black; }
+  background-color: black;
+}
 
 /* =============================================================================
     $fonts
 ============================================================================= */
-h1, h2, p {
-  font-family: Raleway; }
+h1,h2,p {
+  font-family: Raleway;
+}
+
 
 /* =============================================================================
     $content
 ============================================================================= */
+
+
 .wip {
   position: fixed;
   top: 90px;
@@ -41,34 +48,36 @@ h1, h2, p {
   background: gray;
   color: white;
   padding: 0 200px;
-  font-size: 25px; }
+  font-size: 25px;
+}
 
 /* =============================================================================
     $Footer
 ============================================================================= */
 html {
-  position: relative;
-  min-height: 100%; }
-
+    position: relative;
+    min-height: 100%;
+}
 body {
-  margin: 0; }
-
+  margin: 0;
+}
 .wrapper {
   box-sizing: border-box;
   position: relative;
   padding: 0 0 100px;
-  min-height: 100vh; }
-
+  min-height: 100vh;
+}
 footer {
-  position: absolute;
-  padding: 20px 0 0;
-  border-top-style: dashed;
-  left: 0;
-  bottom: 0;
-  height: 100px;
-  width: 100%; }
-  footer img, footer i {
-    margin: 4px;
-    height: 34px; }
-
-/*# sourceMappingURL=master.css.map */
+    position: absolute;
+    padding: 20px 0 0;
+    border-top-style: dashed;;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    
+    img, i {
+      margin: 4px;
+      height: 34px;
+    }
+}
