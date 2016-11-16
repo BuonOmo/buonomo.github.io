@@ -27,7 +27,7 @@ body {
 /* =============================================================================
     $fonts
 ============================================================================= */
-h1, h2, p {
+* {
   font-family: Raleway; }
 
 /* =============================================================================
@@ -66,9 +66,33 @@ footer {
   left: 0;
   bottom: 0;
   height: 100px;
-  width: 100%; }
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around; }
+  footer > a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 40px; }
+    footer > a.email {
+      font-size: 45px; }
+      footer > a.email > .before,
+      footer > a.email > .after {
+        display: block;
+        transform: scaleY(0.1);
+        font-size: .7em; }
+      footer > a.email:hover > .before, footer > a.email:hover > .after {
+        transform: scaleY(1);
+        animation: pull 2s; }
   footer img, footer i {
     margin: 4px;
     height: 34px; }
+
+@keyframes pull {
+  from {
+    transform: scaleY(0.1); }
+  to {
+    transform: scale(1); } }
 
 /*# sourceMappingURL=master.css.map */
