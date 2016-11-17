@@ -1,6 +1,6 @@
 articles = [
   {
-    title: "Ascacou, a game in browser and electron"
+    title: "Ascacou, a game both in browser & electron"
     description: """
       Ascacou is a two player game, created by my uncle Marc Buonomo.
       I’ve made an online and an electron version of this game, which you
@@ -25,7 +25,7 @@ Vue.component 'articleResume',
   props: ['article']
   template: """
     <article>
-      <h2><a :href="article.template">{{article.title}}</a></h2>
+      <h2>{{article.title}}</h2>
       <p v-html="article.description"></p>
     </article>
     """
