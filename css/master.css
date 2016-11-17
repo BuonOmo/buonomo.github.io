@@ -3,13 +3,12 @@ body {
   display: flex; }
 
 .background {
-  background: url(http://unsplash.com/photos/UJQVUWsJFBo/download);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #FF4B4E; }
+  background-image: url(http://unsplash.com/photos/UJQVUWsJFBo/download), linear-gradient(45deg, #6fbfd3 0%, #7754c2 34%, #776bc5 43%, #76abcf 68%, #3c94aa 100%); }
 
 .wrapper {
   mix-blend-mode: screen;
@@ -24,7 +23,7 @@ body {
     $fonts
 ============================================================================= */
 * {
-  font-family: Raleway; }
+  font-family: Raleway, serif; }
 
 /* =============================================================================
     $content
@@ -51,12 +50,16 @@ h1:first-of-type {
 
 p {
   text-align: justify; }
-
-a {
-  color: black; }
-  a:hover, a:hover > .fa {
-    font-weight: 700;
-    color: black; }
+  p a {
+    color: black;
+    position: relative; }
+    p a:hover, p a:hover > .fa {
+      color: darkgray; }
+    p a:visited::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: 'v'; }
 
 article ~ article {
   margin-top: 20px; }
@@ -80,6 +83,7 @@ body {
   box-sizing: border-box;
   position: relative;
   padding: 0 0 100px;
+  width: 100%;
   min-height: 100vh; }
 
 footer {
@@ -94,11 +98,19 @@ footer {
   justify-content: center;
   align-items: baseline; }
   footer > a {
+    text-align: center;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 30px; }
+    font-size: 30px;
+    width: 40px;
+    height: 40px; }
     footer > a.email {
       font-size: 35px; }
+      footer > a.email:hover {
+        color: darkgray; }
+    footer > a:not(.email):hover {
+      background-color: black;
+      color: white; }
   footer img, footer i {
     margin: 4px;
     height: 34px; }
