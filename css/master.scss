@@ -43,7 +43,7 @@ body {
   top: 90px;
   left: -200px;
   transform: rotate(-45deg);
-  background: red;
+  background: darkgoldenrod;
   color: white;
   padding: 0 200px;
   font-size: 25px;
@@ -78,20 +78,20 @@ body {
 p {
   text-align: justify;
   a {
-    color: blue;
+    color: darkblue;
     position: relative;
-    &:hover {
-      color: lightblue;
+    &:visited {
+      color: blue;
     }
-    &:visited::after { // FIXME: should show a "validate icon"
-      position: absolute;
-      top: 0;
-      right: 0;
-      content: 'v';
+    &:hover {
+      color: darkslategray;
     }
   }
 }
-
+a,
+a:visited {
+  color: black;
+}
 
 article {
   padding: 0 16px;

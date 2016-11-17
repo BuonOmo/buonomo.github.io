@@ -32,7 +32,7 @@ body {
   top: 90px;
   left: -200px;
   transform: rotate(-45deg);
-  background: red;
+  background: darkgoldenrod;
   color: white;
   padding: 0 200px;
   font-size: 25px; }
@@ -61,15 +61,16 @@ body {
 p {
   text-align: justify; }
   p a {
-    color: blue;
+    color: darkblue;
     position: relative; }
+    p a:visited {
+      color: blue; }
     p a:hover {
-      color: lightblue; }
-    p a:visited::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      content: 'v'; }
+      color: darkslategray; }
+
+a,
+a:visited {
+  color: black; }
 
 article {
   padding: 0 16px;
