@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   display: flex; }
 
@@ -33,15 +32,26 @@ body {
   top: 90px;
   left: -200px;
   transform: rotate(-45deg);
-  background: black;
+  background: red;
   color: white;
   padding: 0 200px;
   font-size: 25px; }
 
-h1:first-of-type {
+.tweet {
+  position: absolute;
+  top: 20px;
+  right: 20px; }
+  .tweet > i.fa {
+    font-size: 50px; }
+  .tweet:hover {
+    animation: wiggle .4s 2; }
+
+.title {
   text-align: center;
   margin: 100px 0;
   font-size: 3em; }
+  .title > span {
+    color: darkgoldenrod; }
 
 #app {
   display: block;
@@ -51,23 +61,24 @@ h1:first-of-type {
 p {
   text-align: justify; }
   p a {
-    color: black;
+    color: blue;
     position: relative; }
-    p a:hover, p a:hover > .fa {
-      color: darkgray; }
+    p a:hover {
+      color: lightblue; }
     p a:visited::after {
       position: absolute;
       top: 0;
       right: 0;
       content: 'v'; }
 
+article {
+  padding: 0 16px;
+  border: 2px solid white; }
+  article:hover {
+    border-color: black; }
+
 article ~ article {
-  margin-top: 20px; }
-  article ~ article::before {
-    content: '—';
-    text-align: center;
-    display: block;
-    padding-bottom: 20px; }
+  margin-top: 40px; }
 
 /* =============================================================================
     $Footer
@@ -102,17 +113,35 @@ footer {
     text-decoration: none;
     margin: 0 15px;
     font-size: 30px;
-    width: 40px;
+    min-width: 40px;
     height: 40px; }
     footer > a.email {
+      position: relative;
       font-size: 35px; }
-      footer > a.email:hover {
-        color: darkgray; }
+      footer > a.email::before {
+        content: 'buonomo.ulysse'; }
+      footer > a.email::after {
+        content: 'gmail.com'; }
+      footer > a.email::before, footer > a.email::after {
+        transition: all .2s;
+        font-size: 0; }
+      footer > a.email:hover::before, footer > a.email:hover::after {
+        font-size: 20px; }
     footer > a:not(.email):hover {
-      background-color: black;
-      color: white; }
+      color: white;
+      background-color: black; }
   footer img, footer i {
     margin: 4px;
     height: 34px; }
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg); }
+  33% {
+    transform: rotate(-5deg); }
+  66% {
+    transform: rotate(5deg); }
+  100% {
+    transform: rotate(0deg); } }
 
 /*# sourceMappingURL=master.css.map */
