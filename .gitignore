@@ -2,10 +2,14 @@
 user-icon-big.png
 cat_wink.jpg
 
-# Sass compiler
+# Sass
 .sass-cache
 *.css.map
 
+# Coffee
+*.js.map
 
-# We do not ignore css and js file so that github render the website without
-# issues
+# Bower
+bower_components
+
+# We do not ignore css, js and html file so that github render the website without issues
