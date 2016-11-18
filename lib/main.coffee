@@ -23,6 +23,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus
       laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
       <br>
+      <div><img src='//placehold.it/230' alt='an image' style='float: left; margin: 20px 20px 10px 0;'></div>
       laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
       <br>
@@ -202,7 +203,9 @@ Vue.component 'articleResume',
   methods:
     toggle: () ->
       @exp = !@exp # fixme: should use a computed variable instead (or setter and getter)
-      window.location = '#' + @slugify(@article.title) if @exp
+      setTimeout(() =>
+        window.location = '#' + @slugify(@article.title)
+      , 200) if @exp
     slugify: (text) ->
       text.toLowerCase().replace(/[^\w ]+/g,'').replace(/\ +/g,'-')
 
