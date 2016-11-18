@@ -57,16 +57,154 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus
       asynchronously?
       """
     type: "question of the month"
+    content: """
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+
+"""
+  },{
+    title: "This article is about the meaning of life"
+    description: """
+      Yesterday I was wondering about which one to choose between Ruby on Rails
+      or Express framework. Ruby is way prettier and thus more attractive.
+      However, is it as efficient as javascript which is made to work
+      asynchronously?
+      """
+    type: "question of the month"
+    content: """
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+
+"""
+  },{
+    title: "Lorem Ipsum sit Dolor amet"
+    description: """
+      Yesterday I was wondering about which one to choose between Ruby on Rails
+      or Express framework. Ruby is way prettier and thus more attractive.
+      However, is it as efficient as javascript which is made to work
+      asynchronously?
+      """
+    type: "question of the month"
+    content: """
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+      <br>
+      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
+
+"""
   }]
 
 Vue.component 'articleResume',
-  props: ['article']
+  props: ['article', 'exp']
   template: """
-    <article>
+    <article :id="slugify(article.title)" @click='toggle()'>
       <h2>{{article.title}}</h2>
-      <p v-html="article.description"></p>
+      <p v-html="article.content" :class='{expanded: exp}'></p>
     </article>
     """
+  methods:
+    toggle: () ->
+      @exp = !@exp # fixme: should use a computed variable instead (or setter and getter)
+      window.location = '#' + @slugify(@article.title) if @exp
+    slugify: (text) ->
+      text.toLowerCase().replace(/[^\w ]+/g,'').replace(/\ +/g,'-')
 
 
 app = new Vue

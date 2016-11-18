@@ -14,6 +14,9 @@ body {
                                            rgba(119, 107, 197, 1) 43%,
                                            rgba(118, 171, 207, 1) 68%,
                                            rgba(60,  148, 170, 1) 100%);
+  background-repeat: round;
+  -webkit-filter: brightness(.9) blur(20px);
+  filter: brightness(.9) blur(20px);
 }
 .wrapper {
   mix-blend-mode: screen;
@@ -39,7 +42,7 @@ body {
     $content
 ============================================================================= */
 .wip {
-  position: fixed;
+  position: absolute;
   top: 90px;
   left: -200px;
   transform: rotate(-45deg);
@@ -49,7 +52,7 @@ body {
   font-size: 25px;
 }
 .tweet {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   >i.fa {
@@ -77,11 +80,14 @@ body {
 }
 
 p {
-  max-height: 200px;
   text-align: justify;
-  background: -webkit-linear-gradient(black, black 70%, white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  &:not(.expanded) {
+    max-height: 200px;
+    background: -webkit-linear-gradient(black, black 70%, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+  }
   a {
     color: darkblue;
     position: relative;

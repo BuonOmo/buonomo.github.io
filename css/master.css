@@ -7,7 +7,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(http://unsplash.com/photos/UJQVUWsJFBo/download), linear-gradient(45deg, #6fbfd3 0%, #7754c2 34%, #776bc5 43%, #76abcf 68%, #3c94aa 100%); }
+  background-image: url(http://unsplash.com/photos/UJQVUWsJFBo/download), linear-gradient(45deg, #6fbfd3 0%, #7754c2 34%, #776bc5 43%, #76abcf 68%, #3c94aa 100%);
+  background-repeat: round;
+  -webkit-filter: brightness(0.9) blur(20px);
+  filter: brightness(0.9) blur(20px); }
 
 .wrapper {
   mix-blend-mode: screen;
@@ -28,7 +31,7 @@ body {
     $content
 ============================================================================= */
 .wip {
-  position: fixed;
+  position: absolute;
   top: 90px;
   left: -200px;
   transform: rotate(-45deg);
@@ -38,7 +41,7 @@ body {
   font-size: 25px; }
 
 .tweet {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px; }
   .tweet > i.fa {
@@ -60,11 +63,13 @@ body {
   max-width: 700px; }
 
 p {
-  max-height: 200px;
-  text-align: justify;
-  background: -webkit-linear-gradient(black, black 70%, white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  text-align: justify; }
+  p:not(.expanded) {
+    max-height: 200px;
+    background: -webkit-linear-gradient(black, black 70%, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden; }
   p a {
     color: darkblue;
     position: relative; }
