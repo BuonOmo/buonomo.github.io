@@ -77,7 +77,11 @@ body {
 }
 
 p {
+  max-height: 200px;
   text-align: justify;
+  background: -webkit-linear-gradient(black, black 70%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   a {
     color: darkblue;
     position: relative;

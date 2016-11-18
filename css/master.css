@@ -60,7 +60,11 @@ body {
   max-width: 700px; }
 
 p {
-  text-align: justify; }
+  max-height: 200px;
+  text-align: justify;
+  background: -webkit-linear-gradient(black, black 70%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
   p a {
     color: darkblue;
     position: relative; }
