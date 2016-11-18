@@ -56,7 +56,8 @@ body {
 #app {
   display: block;
   margin: 0 auto;
-  width: 60%; }
+  width: 80%;
+  max-width: 700px; }
 
 p {
   text-align: justify; }
