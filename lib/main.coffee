@@ -192,11 +192,33 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus
 """
   }]
 
+@clipcopy = (text) =>
+  textArea = document.createElement("textarea")
+  textArea.style.position = 'fixed'
+  textArea.style.top = 0
+  textArea.style.left = 0
+  textArea.style.width = '2em'
+  textArea.style.height = '2em'
+  textArea.style.padding = 0
+  textArea.style.border = 'none'
+  textArea.style.outline = 'none'
+  textArea.style.boxShadow = 'none'
+  textArea.style.background = 'transparent'
+  textArea.value = text
+  document.body.appendChild(textArea)
+  textArea.select()
+  try
+    document.execCommand('copy')
+  catch
+    console.log _error
+  document.body.removeChild(textArea)
+
 Vue.component 'articleResume',
   props: ['article', 'exp']
   template: """
     <article :id="slugify(article.title)" @click='toggle()'>
-      <h2>{{article.title}}</h2>
+      <h2>{{article.title}} <span @click.stop='clipcopy(article.title)'><i class='fa fa-clipboard'></i></span></h2>
+
       <p v-html="article.content" :class='{expanded: exp}'></p>
     </article>
     """
@@ -208,9 +230,12 @@ Vue.component 'articleResume',
       , 200) if @exp
     slugify: (text) ->
       text.toLowerCase().replace(/[^\w ]+/g,'').replace(/\ +/g,'-')
+    clipcopy: window.clipcopy
 
 
-app = new Vue
+@app = new Vue
   el: "#app"
   data:
     articles: articles
+  methods:
+    clipcopy: window.clipcopy
