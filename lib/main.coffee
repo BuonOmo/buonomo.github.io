@@ -239,3 +239,11 @@ Vue.component 'articleResume',
     articles: articles
   methods:
     clipcopy: window.clipcopy
+
+@addclicked = (event) ->
+  event.stopPropagation()
+  event.preventDefault()
+  document.querySelector('.email>span').classList.add 'copied'
+  setTimeout () ->
+    document.querySelector('.email>span').classList.remove 'copied'
+  , 2000

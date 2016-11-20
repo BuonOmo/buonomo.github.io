@@ -113,11 +113,11 @@ footer {
   padding: 10px 0;
   box-sizing: border-box;
   border-top-style: dashed;
-  left: 0;
+  left: 33%;
   bottom: 0;
-  width: 100%;
+  width: 34%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: baseline; }
   footer > a {
     text-align: center;
@@ -129,15 +129,32 @@ footer {
     footer > a.email {
       position: relative;
       font-size: 35px; }
-      footer > a.email::before {
-        content: 'buonomo.ulysse'; }
-      footer > a.email::after {
-        content: 'gmail.com'; }
-      footer > a.email::before, footer > a.email::after {
-        transition: all .2s;
-        font-size: 0; }
-      footer > a.email:hover::before, footer > a.email:hover::after {
-        font-size: 20px; }
+      footer > a.email > span {
+        display: none; }
+      footer > a.email:hover > span {
+        display: block;
+        position: absolute;
+        top: -40px;
+        left: -4px;
+        background: black;
+        color: white;
+        border: 2px solid black; }
+        footer > a.email:hover > span.copied {
+          background: white;
+          color: black; }
+        footer > a.email:hover > span::after {
+          top: 100%;
+          left: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: transparent;
+          border-top-color: #000000;
+          border-width: 5px;
+          margin-left: -5px; }
     footer > a:not(.email):hover {
       color: white;
       background-color: black; }
