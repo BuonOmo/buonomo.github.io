@@ -62,20 +62,21 @@ body {
   width: 80%;
   max-width: 700px; }
 
-p {
+.article-content {
+  margin-bottom: 16px;
   text-align: justify; }
-  p:not(.expanded) {
+  .article-content:not(.expanded) {
     max-height: 200px;
     background: -webkit-linear-gradient(black, black 70%, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     overflow: hidden; }
-  p a {
+  .article-content a {
     color: darkblue;
     position: relative; }
-    p a:visited {
+    .article-content a:visited {
       color: blue; }
-    p a:hover {
+    .article-content a:hover {
       color: darkslategray; }
 
 a,
@@ -85,7 +86,8 @@ a:visited {
 article {
   padding: 0 16px;
   border: 2px solid white;
-  position: relative; }
+  position: relative;
+  transition: border .2s; }
   article:hover {
     border-color: black; }
   article > .collapse {
@@ -94,9 +96,9 @@ article {
     position: absolute;
     opacity: 0;
     transition: opacity .5s;
-    padding: 8px; }
+    padding: 8px;
+    font-size: 2em; }
     article > .collapse.visible {
-      font-size: 2em;
       opacity: 1; }
 
 article ~ article {

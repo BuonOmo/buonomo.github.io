@@ -1,195 +1,22 @@
+Vue.use AsyncComputed
+
 articles = [
   {
     title: "Ascacou, a game both in browser & electron"
-    description: """
-      Ascacou is a two player game, created by my uncle Marc Buonomo.
-      I’ve made an online and an electron version of this game, which you
-      can find on <a href="https://github.com/BuonOmo/ascacou">github</a>.
-      Soon it will be an online game, using Ruby on Rails or Nodejs.
-      """
-    template: "asc.html"
     type: "arcticle"
-    content: """
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      <div><img src='//placehold.it/230' alt='an image' style='float: left; margin: 20px 20px 10px 0;'></div>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-"""
-  }
-  {
-    title: "Does Ruby on Rails work asynchronously as Node.js?"
-    description: """
-      Yesterday I was wondering about which one to choose between Ruby on Rails
-      or Express framework. Ruby is way prettier and thus more attractive.
-      However, is it as efficient as javascript which is made to work
-      asynchronously?
-      """
+    contentUrl: "articles/ascacou-a-game-both-in-browser-electron.html"
+  }, {
+    title: "How to work asynchronously with Ruby as in javascript"
     type: "question of the month"
-    content: """
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-"""
-  },{
+    contentUrl: "articles/placeholder.html"
+  }, {
     title: "This article is about the meaning of life"
-    description: """
-      Yesterday I was wondering about which one to choose between Ruby on Rails
-      or Express framework. Ruby is way prettier and thus more attractive.
-      However, is it as efficient as javascript which is made to work
-      asynchronously?
-      """
     type: "question of the month"
-    content: """
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-"""
+    contentUrl: "articles/placeholder.html"
   },{
-    title: "Lorem Ipsum sit Dolor amet"
-    description: """
-      Yesterday I was wondering about which one to choose between Ruby on Rails
-      or Express framework. Ruby is way prettier and thus more attractive.
-      However, is it as efficient as javascript which is made to work
-      asynchronously?
-      """
+    title: "On Clipboard access for developers"
     type: "question of the month"
-    content: """
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-      <br>
-      laborum laudantium magnam, minima necessitatibus neque, qui quibusdam quo ratione rem reprehenderit sit temporibus.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus, eaque ex illo inventore itaque
-
-"""
+    contentUrl: "articles/placeholder.html"
   }]
 
 @clipcopy = (text) =>
@@ -220,9 +47,14 @@ Vue.component 'articleResume',
       <span class='collapse' @click.stop='collapse()' :class='{visible: exp}'><i class='fa fa-compress'></i></span>
       <h2>{{article.title}}</h2>
 
-      <p v-html="article.content" :class='{expanded: exp}'></p>
+      <div class='article-content' v-html="content" :class='{expanded: exp}'></div>
     </article>
     """
+  asyncComputed:
+    content:
+      get: () ->
+        Vue.http.get(@article.contentUrl).then (response) -> response.body
+      default: "..."
   methods:
     expand: () ->
       @exp = true # fixme: should use a computed variable instead (or setter and getter)
