@@ -216,18 +216,22 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto doloribus
 Vue.component 'articleResume',
   props: ['article', 'exp']
   template: """
-    <article :id="slugify(article.title)" @click='toggle()'>
+    <article :id="slugify(article.title)" @click='if (!exp) expand()'>
+      <span class='collapse' @click.stop='collapse()' :class='{visible: exp}'><i class='fa fa-compress'></i></span>
       <h2>{{article.title}}</h2>
 
       <p v-html="article.content" :class='{expanded: exp}'></p>
     </article>
     """
   methods:
-    toggle: () ->
-      @exp = !@exp # fixme: should use a computed variable instead (or setter and getter)
+    expand: () ->
+      @exp = true # fixme: should use a computed variable instead (or setter and getter)
       setTimeout(() =>
         window.location = '#' + @slugify(@article.title)
-      , 200) if @exp
+      , 200)
+    collapse: () ->
+      @exp = false
+      window.location = '#'
     slugify: (text) ->
       text.toLowerCase().replace(/[^\w ]+/g,'').replace(/\ +/g,'-')
     clipcopy: window.clipcopy
@@ -240,6 +244,9 @@ Vue.component 'articleResume',
   methods:
     clipcopy: window.clipcopy
 
+###
+  this function is used in footer for email clipcopy event.
+###
 @addclicked = (event) ->
   event.stopPropagation()
   event.preventDefault()

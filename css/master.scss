@@ -107,8 +107,21 @@ a:visited {
 article {
   padding: 0 16px;
   border: 2px solid white;
+  position: relative;
   &:hover {
     border-color: black;
+  }
+  >.collapse {
+    top: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+    padding: 8px;
+    &.visible {
+      font-size: 2em;
+      opacity: 1;
+    }
   }
 }
 article ~ article {
