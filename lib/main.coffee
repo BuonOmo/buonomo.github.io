@@ -217,7 +217,7 @@ Vue.component 'articleResume',
   props: ['article', 'exp']
   template: """
     <article :id="slugify(article.title)" @click='toggle()'>
-      <h2>{{article.title}} <span @click.stop='clipcopy(article.title)'><i class='fa fa-clipboard'></i></span></h2>
+      <h2>{{article.title}}</h2>
 
       <p v-html="article.content" :class='{expanded: exp}'></p>
     </article>
